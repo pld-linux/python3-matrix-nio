@@ -15,8 +15,17 @@ BuildRequires:	python3-modules >= 1:3.8
 BuildRequires:	python3-setuptools
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
+Requires:	python3-aiofiles >= 23.1.0
+Requires:	python3-aiohttp >= 3.8.3
+Requires:	python3-aiohttp-socks >= 0.7.0
+Requires:	python3-future >= 0.18.2
+Requires:	python3-h11 >= 0.14.0
+Requires:	python3-h2 >= 4.0.0
+Requires:	python3-jsonschema >= 4.4.0
 Requires:	python3-modules >= 1:3.8
-Requires:	python3-olm
+Requires:	python3-olm >= 3.1.3
+Requires:	python3-pycryptodome >= 3.10.1
+Requires:	python3-unpaddedbase64 >= 2.1.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
